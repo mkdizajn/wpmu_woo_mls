@@ -14,16 +14,16 @@ Great for starting MultiLanguage webshop website :)
 
 # What needs to be set
 
-- Setup MU install and setup your blogs
+- set up MU install and set up your blogs
 
-- WooCommerce plugin have to be network enabled and MLS also :)
+- WooCommerce plugin has to be network enabled and MLS also :)
 
-- Define per blog the languages and setup MLS correctly.
+- define the languages per blog and setup MLS correctly
 
-- Use great Mystile theme for start setting up products 
+- use great `Mystile Woo theme` to start setting up products
 
--------------
+that's it, hth
 
+----
 cheers, kreso
-
-hjhkjhjkj
+----
