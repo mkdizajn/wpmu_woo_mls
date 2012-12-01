@@ -14,7 +14,7 @@ Great for starting MultiLanguage webshop website :)
 
 # What needs to be set
 
-- Settup MU install and setup your blogs
+- Setup MU install and setup your blogs
 
 - WooCommerce plugin have to be network enabled and MLS also :)
 
