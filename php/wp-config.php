@@ -43,10 +43,14 @@ define('DB_COLLATE', '');
  * @since 2.6.0
  */
 
-// This is where we define the OpenShift specific secure variable functions
-require_once(ABSPATH . '/wp-includes/openshift.inc');
-
-
+define('AUTH_KEY',         'cXN 0rC+}Si<*E5cClk<?xpzIn #659p2lo*~|0evAq*up?Lr7Gf)w:,eZ=ES?6f');
+define('SECURE_AUTH_KEY',  'V|zGP(8eCWQ{24{^jml;@}8U!f- ?-H+gE:&}r^ih45==`_k3 !j_:y:22F2jnfo');
+define('LOGGED_IN_KEY',    '08q`ne(iv0cdjMBzk@t;bQ3J7!QN[^eibt{4:NoXd6}}1gwd|Sg~en|p+:4HS&$|');
+define('NONCE_KEY',        '^RBB7{qK]%im7&d6.NAr8%5>D}:J|,_G9X*7<eF@WXaYpKue3%(Mu8--s7NcK0:A');
+define('AUTH_SALT',        'Di2!h!]W]N!j}@YN9~#ArXN!]>qkc-7m8&-||n%FPU<1$F?}b-D[:KImM/ %Y%k$');
+define('SECURE_AUTH_SALT', 'Sc)3DVDCLd<=4OH!ldNv,r;c#3>OWy)-f}GmcVu_D+z-&)-u]c!8N*_Cc+ISykk5');
+define('LOGGED_IN_SALT',   ',im6H%x}jKMslNS}2S`P+.oP|p~v|l~GV=ZsqQH$#7VbqwPwJj|uy:!L0$S4>@2H');
+define('NONCE_SALT',       '+2zhvCC:e=/zX8Lb(ad;rN][-X`o~g:]T2&oy!]zjRMN`iL~?dmg-8p($4@0W}06');
 
 /**
  * WordPress Database Table prefix.
@@ -68,9 +72,9 @@ define('WPLANG', '');
 
 define('WP_CACHE', true);
 
-# define('WP_ALLOW_MULTISITE', false);
-define('MULTISITE', true);
-define('SUBDOMAIN_INSTALL', false);
+define('WP_ALLOW_MULTISITE', true);
+#define('MULTISITE', true);
+#define('SUBDOMAIN_INSTALL', false);
 # $base = '/';
 # define('DOMAIN_CURRENT_SITE', 'mkdizajn.com');
 # define('PATH_CURRENT_SITE', '/');
