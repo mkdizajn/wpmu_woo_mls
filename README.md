@@ -1,4 +1,4 @@
-# Wordpress Multisite WooCommerce collection:
+# Openshift my Wordpress Multisite WooCommerce collection:
 
 * Wordpress MU install
 * WooCommerce plugin
