@@ -14,18 +14,34 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('DB_NAME', $_ENV['OPENSHIFT_APP_NAME']);
+if ( getenv ( 'OPENSHIFT_APP_NAME' ) <> "" ){
+	// ** MySQL settings - You can get this info from your web host ** //
+	/** The name of the database for WordPress */
+	define('DB_NAME', $_ENV['OPENSHIFT_APP_NAME']);
 
-/** MySQL database username */
-define('DB_USER', $_ENV['OPENSHIFT_MYSQL_DB_USERNAME']);
+	/** MySQL database username */
+	define('DB_USER', $_ENV['OPENSHIFT_MYSQL_DB_USERNAME']);
 
-/** MySQL database password */
-define('DB_PASSWORD', $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD']);
+	/** MySQL database password */
+	define('DB_PASSWORD', $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD']);
 
-/** MySQL hostname */
-define('DB_HOST', $_ENV['OPENSHIFT_MYSQL_DB_HOST'] . ':' . $_ENV['OPENSHIFT_MYSQL_DB_PORT']);
+	/** MySQL hostname */
+	define('DB_HOST', $_ENV['OPENSHIFT_MYSQL_DB_HOST'] . ':' . $_ENV['OPENSHIFT_MYSQL_DB_PORT']);
+
+} else {
+
+	define('DB_NAME', 'theme1');
+
+	/** MySQL database username */
+	define('DB_USER', 'theme1');
+
+	/** MySQL database password */
+	define('DB_PASSWORD', '123456789');
+
+	/** MySQL hostname */
+	define('DB_HOST', 'localhost');
+}
+
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -73,14 +89,12 @@ define('WPLANG', '');
 define('WP_CACHE', true);
 
 define('WP_ALLOW_MULTISITE', true);
-#define('MULTISITE', true);
-#define('SUBDOMAIN_INSTALL', false);
-# $base = '/';
-# define('DOMAIN_CURRENT_SITE', 'mkdizajn.com');
-# define('PATH_CURRENT_SITE', '/');
-# define('SITE_ID_CURRENT_SITE', 1);
-# define('BLOG_ID_CURRENT_SITE', 1);
-
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', false);
+define('DOMAIN_CURRENT_SITE', 'mk-test-domain.com');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
 
 /**
  * For developers: WordPress debugging mode.
